@@ -11,7 +11,7 @@ class Main extends Component {
   
 	
 	componentDidMount() {
-		fetch('http://localhost/taskapi/api.php?type=total&id=1')
+		fetch('taskapi/api.php?type=total&id=1')
 			.then(response => {
 				return response.json();
 			}).then(result => {
@@ -19,7 +19,7 @@ class Main extends Component {
 					users:result
 				});
       });
-      fetch('http://localhost/taskapi/api.php?type=pending&id=1')
+      fetch('taskapi/api.php?type=pending&id=1')
 			.then(response => {
 				return response.json();
 			}).then(result => {
@@ -28,7 +28,7 @@ class Main extends Component {
 				});
       });
       
-      fetch('http://localhost/taskapi/api.php?type=completed&id=1')
+      fetch('taskapi/api.php?type=completed&id=1')
 			.then(response => {
 				return response.json();
 			}).then(result => {
@@ -38,7 +38,7 @@ class Main extends Component {
       });
       
       
-      fetch('http://localhost/taskapi/api.php?type=todays&id=1')
+      fetch('taskapi/api.php?type=todays&id=1')
      		.then(response => {
         return response.json();
 			}).then(result => {
@@ -46,7 +46,7 @@ class Main extends Component {
           todays:result
 				});
 			});
-      fetch('http://localhost/taskapi/api.php?type=alldata&id=1')
+      fetch('taskapi/api.php?type=alldata&id=1')
       .then(response => {
         return response.json();
       }).then(result => {
